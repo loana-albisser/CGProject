@@ -8,7 +8,6 @@ import android.os.SystemClock;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-import hslu.cg.cgproject.Shapes.Square;
 import hslu.cg.cgproject.Shapes.Triangle;
 
 /**
@@ -17,7 +16,7 @@ import hslu.cg.cgproject.Shapes.Triangle;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     private Triangle mTriangle;
-    private Square mSquare;
+
     private final float[] mMVPMatrix = new float[16];
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
@@ -30,7 +29,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 
         mTriangle = new Triangle();
-        mSquare = new Square();
+
     }
 
     //called if geometry changes
