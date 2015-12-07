@@ -1,4 +1,4 @@
-package hslu.cg.cgproject;
+package hslu.cg.cgproject.Shapes;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
