@@ -22,9 +22,9 @@ public class Triangle {
     static final int COORDINATE_PER_VERTEX = 3;
     static float tCoordinate[] =
             {
-                    0.0f, 0.6f, 0.0f,      //top
-                    -0.5f, -0.3f, 0.0f,   // bottom left
-                    0.5f, -0.3f, 0.0f     // bottom right
+                    0.0f, 0.9f, 0.0f,      //top
+                    -0.3f, 0.2f, 0.0f,   // bottom left
+                    0.3f, 0.2f, 0.0f     // bottom right
             };
 
     //set Color r,g,b,opacity
