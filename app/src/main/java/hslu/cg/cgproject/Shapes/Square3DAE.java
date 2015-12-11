@@ -136,7 +136,7 @@ public class Square3DAE {
 
         colorHandle = GLES20.glGetAttribLocation(program, "aVertexColor");
         GLES20.glEnableVertexAttribArray(colorHandle);
-        GLES20.glVertexAttribPointer(colorHandle, 4, GLES20.GL_FLOAT, false,16, colorBuffer);
+        GLES20.glVertexAttribPointer(colorHandle, 4, GLES20.GL_FLOAT, false,24, colorBuffer);
         GLES20.glEnableVertexAttribArray(colorHandle);
 
         MVPMatrixHandle = GLES20.glGetUniformLocation(program, "uMVPMatrix");
