@@ -9,6 +9,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import hslu.cg.cgproject.Shapes.Square3D;
+import hslu.cg.cgproject.Shapes.Square3DAE;
 import hslu.cg.cgproject.Shapes.Triangle;
 
 /**
@@ -17,7 +18,7 @@ import hslu.cg.cgproject.Shapes.Triangle;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     private Triangle mTriangle;
-    private Square3D mSquare3D;
+    private Square3DAE mSquare3D;
 
     private final float[] mMVPMatrix = new float[16];
     private final float[] mProjectionMatrix = new float[16];
@@ -34,7 +35,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glDisable(GL10.GL_DITHER);
 
         mTriangle = new Triangle();
-        mSquare3D = new Square3D();
+        mSquare3D = new Square3DAE();
     }
 
     //called if geometry changes
